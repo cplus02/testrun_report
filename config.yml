@@ -1,0 +1,9 @@
+testrail:
+  base_url: "https://tcgroup.testrail.io"
+  username: "cplus.jack@gmail.com"
+  password: "Aa123456!"
+
+jira:
+  base_url: "https://jira.tc-gaming.co/jira/"
+  username: "jacky.h"
+  password: "Abcd1234"
