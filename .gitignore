@@ -161,3 +161,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 /test_jira.py
+/stwin-report-25ce8aecb2b7.json
+/test_gsheet.py
+/report_demo.py
+/test_testrail.py

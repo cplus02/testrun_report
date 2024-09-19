@@ -11,3 +11,12 @@ class TR:
 
     def get_run_status(self, run_id):
         return self.client.send_get(f"get_run/{run_id}")
+
+    def get_project_runs(self, project_id):
+        return self.client.send_get(f"get_runs/{project_id}")
+
+    def get_project_plans(self, project_id):
+        return self.client.send_get(f"get_plans/{project_id}")
+
+    def get_plan(self, plan_id):
+        return self.client.send_get(f"get_plan/{plan_id}")
