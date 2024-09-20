@@ -1,0 +1,18 @@
+testrail:
+  base_url: "https://tcgroup.testrail.io"
+  username: "test1234@gmail.com"
+  password: "ABCD12345"
+
+jira:
+  base_url: "https://jira.test.com/jira/"
+  username: "testuser"
+  password: "ABCD1234"
+
+gsheet:
+    credentials: "credential.json"
+    qa_report_url: "https://docs.google.com/spreadsheets/d/XXXXXXXXXXXXXXXXX"
+
+telegram:
+    token: "XXXXXXXXXX"
+    group_id: "-12345678"
+    channel_id: "-9876543210"

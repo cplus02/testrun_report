@@ -41,7 +41,6 @@ def format_report(run_info):
     # Passed rate 取到整數
     passed_rate = int(run_passed / total_cases * 100)
 
-
     # Format as HTML
     # Long version
     # report = f"*{run_title}*\n\n*PASSED*: {run_passed}\n*FAILED*: {run_failed}\n*BLOCKED*: {run_blocked}\n*UNTESTED*: {run_untested}\n*RETEST*: {run_retest}\n*NOT IMPLEMENTED*: {run_not_implemented}\n*NOT AVAILABLE*: {run_not_available}\n*TESTING*: {run_testing}\n\n*PASSED RATE*: {passed_rate}%\n\n{run_url}"
