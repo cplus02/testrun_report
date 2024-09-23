@@ -166,3 +166,4 @@ cython_debug/
 /report_demo.py
 /test_testrail.py
 /config.yml
+/test_lark.py
