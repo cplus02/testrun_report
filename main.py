@@ -24,7 +24,7 @@ async def send_report():
 
     for run_id in run_ids:
         run_info = tr.get_run_status(run_id)
-        await bot.send_message(group_id, format_report(run_info, "telegram"), parse_mode='Markdown')
+        await bot.send_message(chat_id, format_report(run_info, "telegram"), parse_mode='Markdown')
         lk.send_message_by_chat_id(config['lark']['group_id'], format_report(run_info, "lark"))
 
 def format_report(run_info, im_type):
@@ -46,7 +46,7 @@ def format_report(run_info, im_type):
 
     # Passed rate 取到整數
     passed_rate = int(run_passed / total_cases * 100)
-    # Format as HTML
+    # Format as markdown v1 for telegram
     # Long version
     # report = f"*{run_title}*\n\n*PASSED*: {run_passed}\n*FAILED*: {run_failed}\n*BLOCKED*: {run_blocked}\n*UNTESTED*: {run_untested}\n*RETEST*: {run_retest}\n*NOT IMPLEMENTED*: {run_not_implemented}\n*NOT AVAILABLE*: {run_not_available}\n*TESTING*: {run_testing}\n\n*PASSED RATE*: {passed_rate}%\n\n{run_url}"
 
